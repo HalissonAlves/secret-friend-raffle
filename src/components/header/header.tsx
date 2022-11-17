@@ -6,7 +6,7 @@ import { Container, Logo, Participant } from './header.style';
 const Header = () => (
     <Container>
         <Logo role="img" aria-label='Logo do Sorteador'></Logo>
-        <Participant src={ParticipantImg} />
+        <Participant src={process.env.PUBLIC_URL + '/images/participante.png'} alt="Imagem do Participante" />
     </Container>
 );
 

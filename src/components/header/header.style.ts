@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import BigLogoImg from './images/logo.png';
-import SmallLogoImg from './images/logo-pequeno.png';
 
 export const Container = styled.div`
     padding-top: 120px;
@@ -17,12 +15,12 @@ export const Container = styled.div`
 export const Logo = styled.div`
     width: 351px;
     height: 117px;
-    background-image: url(${BigLogoImg});
+    background-image: url(${process.env.PUBLIC_URL}/images/logo.png);
 
     @media screen and (max-width: 800px) {
-            background-image: url(${SmallLogoImg});
-            width: 235px;
-            height: 199px;
+        background-image: url(${process.env.PUBLIC_URL}/images/logo-pequeno.png);
+        width: 235px;
+        height: 199px;
     }
 }
 `;
