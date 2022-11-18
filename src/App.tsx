@@ -1,13 +1,11 @@
-import Form from './components/form/form';
-import Header from './components/header/header';
-import { Container } from './App.style';
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
 
-function App() { 
+const App = () => { 
   return (
-    <Container>
-      <Header />
-      <Form />
-    </ Container>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
   );
 }
 
