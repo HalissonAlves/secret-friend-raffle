@@ -1,6 +1,4 @@
 
-import ParticipantImg from './images/participante.png';
-
 import { Container, Logo, Participant } from './header.style';
 
 const Header = () => (
