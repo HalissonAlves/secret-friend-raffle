@@ -5,14 +5,14 @@ type Props = {
 };
 
 interface IFriendList {
-  friendList: Array<string> | [],
-  setFriendList: Dispatch<SetStateAction<Array<string> | []>>
+  friendList: Array<string>,
+  setFriendList: Dispatch<SetStateAction<Array<string>>>
 }
 
 const FriendListContext = createContext({} as IFriendList);
 
 const FriendListProvider = ({ children }: Props) => {
-  const [friendList, setFriendList] = useState<Array<string> | []>([]);
+  const [friendList, setFriendList] = useState<Array<string>>([]);
 
   return (
     <FriendListContext.Provider value={{friendList, setFriendList}}>
